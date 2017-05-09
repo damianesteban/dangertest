@@ -35,4 +35,8 @@ class DangerTestTests: XCTestCase {
         XCTAssertEqual(sut.multiply(10, 5), 50, "performs subtraction")
     }
     
+    func testDivisiion() {
+        XCTAssertEqual(sut.add(10, 2), 5, "performs addition")
+    }
+    
 }

@@ -3,6 +3,5 @@ machine:
     version: "8.3"
 
 test:
-  post:
+  override:
     - bundle exec danger --verbose
-    #i#- bundle exec danger --verbose
