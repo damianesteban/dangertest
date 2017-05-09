@@ -1,0 +1,9 @@
+machine:
+  xcode:
+    version: "8.0"
+
+test:
+  post:
+    #i#- bundle exec danger --verbose
+  override:
+    - xcodebuild -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone SE,OS=10.0' -enableCodeCoverage YES build clean test | xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
