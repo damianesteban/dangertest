@@ -4,4 +4,5 @@ machine:
 
 test:
   post:
+    - bundle exec danger --verbose
     #i#- bundle exec danger --verbose
